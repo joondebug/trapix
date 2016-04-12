@@ -26,5 +26,5 @@ jQuery(document).ready(function() {
 
 function test(){
 
-	alert('test123');
+	alert('test123456');
 }
