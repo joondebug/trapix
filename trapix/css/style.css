@@ -1,0 +1,28 @@
+html {
+	
+
+}
+
+body {
+	
+	background-color: #2a2a2a;
+
+}
+
+.container-main{
+	height: 100%;
+	width: 100%;
+}
+
+.container-map{
+	background-color: null;
+	height: 700px;
+	width: 700px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -350px;
+	margin-left: -350px;
+}
+
