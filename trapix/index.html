@@ -3,25 +3,39 @@
 <head>
 	
 	<link href="lib/bootstrap-3.3.6-dist/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="lib/startbootstrap-scrolling-nav-1.0.4/css/scrolling-nav.css" rel="stylesheet">
 	<link href="lib/jqvmap/dist/jqvmap.css" media="screen" rel="stylesheet"/>
 	<link href="css/style.css" rel="stylesheet"/>
 
 	<script src="lib/jquery/jquery-1.12.3.min.js"></script>
 	<script src="lib/bootstrap-3.3.6-dist/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
 	<script src="lib/jqvmap/dist/jquery.vmap.min.js"></script>
 	<script src="lib/jqvmap/dist/maps/jquery.vmap.world.js"></script>
 	<script src="lib/jqvmap/dist/maps/continents/jquery.vmap.asia.js"></script>
+
+	<script src="lib/startbootstrap-scrolling-nav-1.0.4/js/scrolling-nav.js"></script>
+    <script src="lib/startbootstrap-scrolling-nav-1.0.4/js/jquery.easing.min.js"></script>
+
 	<script src="js/trapix.js"></script>
 
 
 </head>
 <body>
 
-	<div class="container-main container-fluid">
-		<div class="container-map center-block">
-			<div id="vmap"></div>
+	<section id="section-map" class="section-map">
+		<div class="container-main container-fluid">
+			<div class="container-map center-block">
+				<div id="vmap"></div>
+				<a id="map-link" class="page-scroll" href="#section-pix"></a>
+			</div>
 		</div>
-	</div>
+	</section>
+
+	<section id="section-pix" class="section-pix">
+		<div class="container-fluid">
+		</div>
+	</section>
 
 </body>
 </html>

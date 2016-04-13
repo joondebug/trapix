@@ -1,12 +1,12 @@
 html {
-	
-
+	height: 100%;
+	width: 100%;
 }
 
 body {
-	
+	height: 100%;
+	width: 100%;
 	background-color: #2a2a2a;
-
 }
 
 .container-main{
@@ -16,19 +16,41 @@ body {
 
 .container-map{
 	background-color: null;
-	height: 700px;
-	width: 700px;
+	height: 100%;
+	width: 100%;
 
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -350px;
-	margin-left: -350px;
+	padding: 150px;
 }
 
+.section-map{
+	height: 100%;
+	width: 100%;
+}
 
+.section-pix{
+	height: 100%;
+	width: 100%;
+	background-color: #0E2F44;
+}
 
 #vmap{
 	height: 100%;
 	width: 100%;
+	animation-name: mapframe;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;  
+	transition: transform .5s ease-in-out;
+}
+
+
+@keyframes mapframe{
+	0%{
+		top: 90%;
+		opacity: 0.0;
+	}
+	100%{
+		top: 0%;
+		opacity: 1.0;
+	}
+
 }

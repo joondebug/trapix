@@ -18,13 +18,8 @@ jQuery(document).ready(function() {
 	    onRegionClick: function(element, code, region)
 	    {
 	        var message = code.toUpperCase();
-
-	        alert(message);
+	        document.getElementById('map-link').click();
+	        //alert(message);
 	    }
 	});
 });
-
-function test(){
-
-	alert('test123456');
-}
