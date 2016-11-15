@@ -13,24 +13,29 @@ jQuery(document).ready(function() {
 	    normalizeFunction: 'linear',
 	    scaleColors: ['#b6d6ff', '#005ace'],
 	    selectedColor: '#006699',
-	    selectedRegions: null,
+	    selectedRegions: 'TH',
 	    showTooltip: true,
 	    onRegionClick: function(element, code, region)
 	    {
-	        var message = code.toUpperCase();
+	        var countryCode = code.toUpperCase();
 	        //document.getElementById('map-link').click();
-	        openPhotoSwipe();
-	        //alert(message);
+	        openPhotoSwipe(countryCode);
+	        //alert(countryCode);
 	    }
 	});
 
 });
 
-var openPhotoSwipe = function() {
+var openPhotoSwipe = function(countryCode) {
     var pswpElement = document.querySelectorAll('.pswp')[0];
 
     // build items array
     var items = [
+        {
+        	src: 'https://c4.staticflickr.com/8/7295/27263426355_e4476a581a_c.jpg',
+        	w: 1536,
+        	h: 2048
+        },
         {
             src: 'https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg',
             w: 964,
